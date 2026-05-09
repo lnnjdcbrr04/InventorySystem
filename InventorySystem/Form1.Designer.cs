@@ -67,19 +67,23 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.txtUsername.Location = new System.Drawing.Point(85, 215);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(251, 24);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.Text = "Username";
             // 
             // txtPassword
             // 
+            this.txtPassword.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.txtPassword.Location = new System.Drawing.Point(85, 278);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(251, 24);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.Text = "Password";
             // 
             // label3
             // 
@@ -154,6 +158,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Login";
             this.ResumeLayout(false);

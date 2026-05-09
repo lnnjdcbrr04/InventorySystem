@@ -56,6 +56,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtConNo = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -216,6 +221,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
+            this.panel3.Controls.Add(this.txtConNo);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.cmbCategory);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.splitter1);
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.btnUpdate);
             this.panel3.Controls.Add(this.btnAdd);
@@ -241,7 +251,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(61, 313);
+            this.btnDelete.Location = new System.Drawing.Point(243, 496);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(91, 29);
             this.btnDelete.TabIndex = 20;
@@ -254,7 +264,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(61, 278);
+            this.btnUpdate.Location = new System.Drawing.Point(146, 496);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(91, 29);
             this.btnUpdate.TabIndex = 19;
@@ -267,7 +277,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(61, 243);
+            this.btnAdd.Location = new System.Drawing.Point(49, 496);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(91, 29);
             this.btnAdd.TabIndex = 18;
@@ -277,7 +287,7 @@
             // cmbStat
             // 
             this.cmbStat.FormattingEnabled = true;
-            this.cmbStat.Location = new System.Drawing.Point(158, 194);
+            this.cmbStat.Location = new System.Drawing.Point(53, 445);
             this.cmbStat.Name = "cmbStat";
             this.cmbStat.Size = new System.Drawing.Size(186, 21);
             this.cmbStat.TabIndex = 17;
@@ -287,7 +297,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label7.Location = new System.Drawing.Point(92, 193);
+            this.label7.Location = new System.Drawing.Point(49, 421);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 21);
             this.label7.TabIndex = 16;
@@ -295,9 +305,11 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(158, 168);
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(146, 329);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(229, 21);
             this.dateTimePicker1.TabIndex = 15;
             // 
             // label6
@@ -305,36 +317,37 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label6.Location = new System.Drawing.Point(47, 167);
+            this.label6.Location = new System.Drawing.Point(146, 305);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 21);
             this.label6.TabIndex = 14;
             this.label6.Text = "Pickup Date:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // txtQuantity
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantity.Location = new System.Drawing.Point(158, 141);
+            this.txtQuantity.Location = new System.Drawing.Point(49, 329);
             this.txtQuantity.Multiline = true;
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(186, 22);
+            this.txtQuantity.Size = new System.Drawing.Size(78, 22);
             this.txtQuantity.TabIndex = 13;
             // 
             // cmbProduct
             // 
             this.cmbProduct.FormattingEnabled = true;
-            this.cmbProduct.Location = new System.Drawing.Point(158, 115);
+            this.cmbProduct.Location = new System.Drawing.Point(49, 268);
             this.cmbProduct.Name = "cmbProduct";
-            this.cmbProduct.Size = new System.Drawing.Size(186, 21);
+            this.cmbProduct.Size = new System.Drawing.Size(299, 21);
             this.cmbProduct.TabIndex = 12;
             // 
             // txtCustName
             // 
             this.txtCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustName.Location = new System.Drawing.Point(158, 88);
+            this.txtCustName.Location = new System.Drawing.Point(49, 97);
             this.txtCustName.Multiline = true;
             this.txtCustName.Name = "txtCustName";
-            this.txtCustName.Size = new System.Drawing.Size(186, 22);
+            this.txtCustName.Size = new System.Drawing.Size(299, 22);
             this.txtCustName.TabIndex = 8;
             // 
             // label5
@@ -342,7 +355,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label5.Location = new System.Drawing.Point(75, 141);
+            this.label5.Location = new System.Drawing.Point(45, 305);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 21);
             this.label5.TabIndex = 7;
@@ -353,7 +366,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label4.Location = new System.Drawing.Point(78, 115);
+            this.label4.Location = new System.Drawing.Point(45, 244);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 21);
             this.label4.TabIndex = 6;
@@ -364,7 +377,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Location = new System.Drawing.Point(17, 89);
+            this.label3.Location = new System.Drawing.Point(45, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(135, 21);
             this.label3.TabIndex = 5;
@@ -375,11 +388,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(16, 27);
+            this.label1.Location = new System.Drawing.Point(87, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 28);
+            this.label1.Size = new System.Drawing.Size(197, 28);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Scheduled Order";
+            this.label1.Text = "Scheduled Orders";
             // 
             // panel4
             // 
@@ -401,6 +414,53 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "Orders";
             // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 548);
+            this.splitter1.TabIndex = 21;
+            this.splitter1.TabStop = false;
+            // 
+            // cmbCategory
+            // 
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Location = new System.Drawing.Point(49, 209);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.Size = new System.Drawing.Size(299, 21);
+            this.cmbCategory.TabIndex = 23;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label9.Location = new System.Drawing.Point(45, 185);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 21);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Category:";
+            // 
+            // txtConNo
+            // 
+            this.txtConNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConNo.Location = new System.Drawing.Point(49, 151);
+            this.txtConNo.Multiline = true;
+            this.txtConNo.Name = "txtConNo";
+            this.txtConNo.Size = new System.Drawing.Size(299, 22);
+            this.txtConNo.TabIndex = 25;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label10.Location = new System.Drawing.Point(45, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(138, 21);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Contact Number:";
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,6 +471,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Orders";
             this.Text = "Orders";
             this.panel2.ResumeLayout(false);
@@ -455,5 +516,10 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtConNo;
+        private System.Windows.Forms.Label label10;
     }
 }
