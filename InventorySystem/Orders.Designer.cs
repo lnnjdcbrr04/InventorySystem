@@ -1,6 +1,6 @@
 ﻿namespace InventorySystem
 {
-    partial class Sales
+    partial class Orders
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -39,26 +38,34 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnMonthly = new System.Windows.Forms.Button();
-            this.btnWeekly = new System.Windows.Forms.Button();
-            this.btnDaily = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.cmbStat = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.cmbProduct = new System.Windows.Forms.ComboBox();
+            this.txtCustName = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel2.Controls.Add(this.button11);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
@@ -71,20 +78,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 566);
             this.panel2.TabIndex = 3;
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button11.Location = new System.Drawing.Point(2, 227);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(197, 33);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "     Stocks";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
@@ -138,7 +131,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(197, 33);
             this.button4.TabIndex = 5;
-            this.button4.Text = "     Reports";
+            this.button4.Text = "     Stocks";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -152,7 +145,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(197, 33);
             this.button3.TabIndex = 4;
-            this.button3.Text = "     Sales";
+            this.button3.Text = "     Reports";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -166,7 +159,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 33);
             this.button2.TabIndex = 3;
-            this.button2.Text = "     Inventory";
+            this.button2.Text = "     Sales";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -180,7 +173,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 33);
             this.button1.TabIndex = 2;
-            this.button1.Text = "     Orders";
+            this.button1.Text = "     Inventory";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -192,7 +185,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(808, 45);
+            this.panel1.Size = new System.Drawing.Size(1084, 45);
             this.panel1.TabIndex = 2;
             // 
             // label2
@@ -205,100 +198,6 @@
             this.label2.Size = new System.Drawing.Size(111, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Dashboard";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.MistyRose;
-            this.panel3.Controls.Add(this.btnMonthly);
-            this.panel3.Controls.Add(this.btnWeekly);
-            this.panel3.Controls.Add(this.btnDaily);
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(203, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(588, 404);
-            this.panel3.TabIndex = 4;
-            // 
-            // btnMonthly
-            // 
-            this.btnMonthly.FlatAppearance.BorderSize = 0;
-            this.btnMonthly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMonthly.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonthly.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnMonthly.Location = new System.Drawing.Point(187, 108);
-            this.btnMonthly.Name = "btnMonthly";
-            this.btnMonthly.Size = new System.Drawing.Size(96, 33);
-            this.btnMonthly.TabIndex = 7;
-            this.btnMonthly.Text = "Monthly";
-            this.btnMonthly.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMonthly.UseVisualStyleBackColor = true;
-            // 
-            // btnWeekly
-            // 
-            this.btnWeekly.FlatAppearance.BorderSize = 0;
-            this.btnWeekly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWeekly.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWeekly.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnWeekly.Location = new System.Drawing.Point(100, 108);
-            this.btnWeekly.Name = "btnWeekly";
-            this.btnWeekly.Size = new System.Drawing.Size(81, 33);
-            this.btnWeekly.TabIndex = 6;
-            this.btnWeekly.Text = "Weekly";
-            this.btnWeekly.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWeekly.UseVisualStyleBackColor = true;
-            // 
-            // btnDaily
-            // 
-            this.btnDaily.FlatAppearance.BorderSize = 0;
-            this.btnDaily.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDaily.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDaily.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnDaily.Location = new System.Drawing.Point(13, 108);
-            this.btnDaily.Name = "btnDaily";
-            this.btnDaily.Size = new System.Drawing.Size(81, 33);
-            this.btnDaily.TabIndex = 5;
-            this.btnDaily.Text = "Daily";
-            this.btnDaily.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDaily.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(349, 32);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(199, 20);
-            this.dateTimePicker1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(55, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 28);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Sales Report";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.MistyRose;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(206, 459);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(585, 140);
-            this.panel4.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Location = new System.Drawing.Point(15, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Total Sales: ";
             // 
             // pictureBox1
             // 
@@ -314,26 +213,214 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // Sales
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.MistyRose;
+            this.panel3.Controls.Add(this.btnDelete);
+            this.panel3.Controls.Add(this.btnUpdate);
+            this.panel3.Controls.Add(this.btnAdd);
+            this.panel3.Controls.Add(this.cmbStat);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.txtQuantity);
+            this.panel3.Controls.Add(this.cmbProduct);
+            this.panel3.Controls.Add(this.txtCustName);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(206, 53);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(375, 548);
+            this.panel3.TabIndex = 4;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(61, 313);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 29);
+            this.btnDelete.TabIndex = 20;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(61, 278);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(91, 29);
+            this.btnUpdate.TabIndex = 19;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(61, 243);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(91, 29);
+            this.btnAdd.TabIndex = 18;
+            this.btnAdd.Text = "Add Order";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // cmbStat
+            // 
+            this.cmbStat.FormattingEnabled = true;
+            this.cmbStat.Location = new System.Drawing.Point(158, 194);
+            this.cmbStat.Name = "cmbStat";
+            this.cmbStat.Size = new System.Drawing.Size(186, 21);
+            this.cmbStat.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label7.Location = new System.Drawing.Point(92, 193);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 21);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Status:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(158, 168);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePicker1.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label6.Location = new System.Drawing.Point(47, 167);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 21);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Pickup Date:";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuantity.Location = new System.Drawing.Point(158, 141);
+            this.txtQuantity.Multiline = true;
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(186, 22);
+            this.txtQuantity.TabIndex = 13;
+            // 
+            // cmbProduct
+            // 
+            this.cmbProduct.FormattingEnabled = true;
+            this.cmbProduct.Location = new System.Drawing.Point(158, 115);
+            this.cmbProduct.Name = "cmbProduct";
+            this.cmbProduct.Size = new System.Drawing.Size(186, 21);
+            this.cmbProduct.TabIndex = 12;
+            // 
+            // txtCustName
+            // 
+            this.txtCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustName.Location = new System.Drawing.Point(158, 88);
+            this.txtCustName.Multiline = true;
+            this.txtCustName.Name = "txtCustName";
+            this.txtCustName.Size = new System.Drawing.Size(186, 22);
+            this.txtCustName.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label5.Location = new System.Drawing.Point(75, 141);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 21);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Quantity:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label4.Location = new System.Drawing.Point(78, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 21);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Product:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label3.Location = new System.Drawing.Point(17, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 21);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Customer Name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label1.Location = new System.Drawing.Point(16, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 28);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Scheduled Order";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MistyRose;
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Location = new System.Drawing.Point(587, 53);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(485, 548);
+            this.panel4.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label8.Location = new System.Drawing.Point(23, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 28);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Orders";
+            // 
+            // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::InventorySystem.Properties.Resources.hfjwhasfj1;
-            this.ClientSize = new System.Drawing.Size(808, 611);
+            this.ClientSize = new System.Drawing.Size(1084, 611);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Sales";
-            this.Text = "Sales";
+            this.Name = "Orders";
+            this.Text = "Orders";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -352,13 +439,21 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnMonthly;
-        private System.Windows.Forms.Button btnWeekly;
-        private System.Windows.Forms.Button btnDaily;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtCustName;
+        private System.Windows.Forms.ComboBox cmbProduct;
+        private System.Windows.Forms.ComboBox cmbStat;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label8;
     }
 }
