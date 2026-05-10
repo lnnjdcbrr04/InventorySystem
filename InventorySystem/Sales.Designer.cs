@@ -36,7 +36,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnOrdersSales = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,7 +65,7 @@
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnOrdersSales);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 45);
             this.panel2.Name = "panel2";
@@ -170,19 +170,19 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnOrdersSales
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button1.Location = new System.Drawing.Point(1, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "     Orders";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOrdersSales.FlatAppearance.BorderSize = 0;
+            this.btnOrdersSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdersSales.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdersSales.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdersSales.Location = new System.Drawing.Point(1, 51);
+            this.btnOrdersSales.Name = "btnOrdersSales";
+            this.btnOrdersSales.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdersSales.TabIndex = 2;
+            this.btnOrdersSales.Text = "     Orders";
+            this.btnOrdersSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdersSales.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -348,7 +348,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnOrdersSales;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
