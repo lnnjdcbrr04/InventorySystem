@@ -10,21 +10,24 @@ using System.Windows.Forms;
 
 namespace InventorySystem
 {
-    public partial class frmOrders : Form
+    public partial class frmDashboard : Form
     {
-        public frmOrders()
+        public frmDashboard()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void frmDashboard_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void btnDbLogout_Click(object sender, EventArgs e)
         {
+            frmDashboard login = new frmDashboard();
+            login.Show();
 
+            this.Close();
         }
     }
 }

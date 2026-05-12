@@ -1,6 +1,6 @@
 ﻿namespace InventorySystem
 {
-    partial class Sales
+    partial class frmSales
     {
         /// <summary>
         /// Required designer variable.
@@ -28,260 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnOrdersSales = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnMonthly = new System.Windows.Forms.Button();
-            this.btnWeekly = new System.Windows.Forms.Button();
-            this.btnDaily = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tabDaily = new System.Windows.Forms.TabPage();
+            this.tabWeekly = new System.Windows.Forms.TabPage();
+            this.Monthly = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btnSlsStocks = new System.Windows.Forms.Button();
+            this.btnSlsLogout = new System.Windows.Forms.Button();
+            this.btnSlsSettings = new System.Windows.Forms.Button();
+            this.btnSlsUsers = new System.Windows.Forms.Button();
+            this.btnSlsReports = new System.Windows.Forms.Button();
+            this.btnSlsSales = new System.Windows.Forms.Button();
+            this.btnSlsInventory = new System.Windows.Forms.Button();
+            this.btnSlsOrder = new System.Windows.Forms.Button();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.guna2TabControl1.SuspendLayout();
+            this.guna2GradientPanel1.SuspendLayout();
+            this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel2.Controls.Add(this.button11);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.btnOrdersSales);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 45);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 566);
-            this.panel2.TabIndex = 3;
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button11.Location = new System.Drawing.Point(2, 227);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(197, 33);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "     Stocks";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button7.Location = new System.Drawing.Point(1, 490);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 33);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "     Logout";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button6.Location = new System.Drawing.Point(1, 446);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(197, 33);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "     Settings";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button5.Location = new System.Drawing.Point(1, 402);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(197, 33);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "     Users";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button4.Location = new System.Drawing.Point(2, 183);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 33);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "     Reports";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button3.Location = new System.Drawing.Point(1, 139);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 33);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "     Sales";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button2.Location = new System.Drawing.Point(1, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 33);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "     Inventory";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnOrdersSales
-            // 
-            this.btnOrdersSales.FlatAppearance.BorderSize = 0;
-            this.btnOrdersSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrdersSales.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdersSales.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnOrdersSales.Location = new System.Drawing.Point(1, 51);
-            this.btnOrdersSales.Name = "btnOrdersSales";
-            this.btnOrdersSales.Size = new System.Drawing.Size(197, 33);
-            this.btnOrdersSales.TabIndex = 2;
-            this.btnOrdersSales.Text = "     Orders";
-            this.btnOrdersSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdersSales.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(808, 45);
-            this.panel1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(58, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Dashboard";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::InventorySystem.Properties.Resources.icons8_menu_50;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
-            this.panel3.Controls.Add(this.btnMonthly);
-            this.panel3.Controls.Add(this.btnWeekly);
-            this.panel3.Controls.Add(this.btnDaily);
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.panel3.Controls.Add(this.guna2TabControl1);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(203, 49);
+            this.panel3.Location = new System.Drawing.Point(206, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(588, 404);
+            this.panel3.Size = new System.Drawing.Size(846, 550);
             this.panel3.TabIndex = 4;
             // 
-            // btnMonthly
+            // guna2TabControl1
             // 
-            this.btnMonthly.FlatAppearance.BorderSize = 0;
-            this.btnMonthly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMonthly.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonthly.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnMonthly.Location = new System.Drawing.Point(187, 108);
-            this.btnMonthly.Name = "btnMonthly";
-            this.btnMonthly.Size = new System.Drawing.Size(96, 33);
-            this.btnMonthly.TabIndex = 7;
-            this.btnMonthly.Text = "Monthly";
-            this.btnMonthly.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMonthly.UseVisualStyleBackColor = true;
+            this.guna2TabControl1.Controls.Add(this.tabDaily);
+            this.guna2TabControl1.Controls.Add(this.tabWeekly);
+            this.guna2TabControl1.Controls.Add(this.Monthly);
+            this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
+            this.guna2TabControl1.Location = new System.Drawing.Point(26, 69);
+            this.guna2TabControl1.Name = "guna2TabControl1";
+            this.guna2TabControl1.SelectedIndex = 0;
+            this.guna2TabControl1.Size = new System.Drawing.Size(558, 464);
+            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.Sienna;
+            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.guna2TabControl1.TabIndex = 8;
+            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
             // 
-            // btnWeekly
+            // tabDaily
             // 
-            this.btnWeekly.FlatAppearance.BorderSize = 0;
-            this.btnWeekly.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWeekly.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWeekly.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnWeekly.Location = new System.Drawing.Point(100, 108);
-            this.btnWeekly.Name = "btnWeekly";
-            this.btnWeekly.Size = new System.Drawing.Size(81, 33);
-            this.btnWeekly.TabIndex = 6;
-            this.btnWeekly.Text = "Weekly";
-            this.btnWeekly.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnWeekly.UseVisualStyleBackColor = true;
+            this.tabDaily.Location = new System.Drawing.Point(4, 44);
+            this.tabDaily.Name = "tabDaily";
+            this.tabDaily.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDaily.Size = new System.Drawing.Size(550, 416);
+            this.tabDaily.TabIndex = 0;
+            this.tabDaily.Text = "Daily";
+            this.tabDaily.UseVisualStyleBackColor = true;
             // 
-            // btnDaily
+            // tabWeekly
             // 
-            this.btnDaily.FlatAppearance.BorderSize = 0;
-            this.btnDaily.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDaily.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDaily.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnDaily.Location = new System.Drawing.Point(13, 108);
-            this.btnDaily.Name = "btnDaily";
-            this.btnDaily.Size = new System.Drawing.Size(81, 33);
-            this.btnDaily.TabIndex = 5;
-            this.btnDaily.Text = "Daily";
-            this.btnDaily.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDaily.UseVisualStyleBackColor = true;
+            this.tabWeekly.Location = new System.Drawing.Point(4, 44);
+            this.tabWeekly.Name = "tabWeekly";
+            this.tabWeekly.Padding = new System.Windows.Forms.Padding(3);
+            this.tabWeekly.Size = new System.Drawing.Size(550, 416);
+            this.tabWeekly.TabIndex = 1;
+            this.tabWeekly.Text = "Weekly";
+            this.tabWeekly.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // Monthly
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(349, 32);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(199, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.Monthly.Location = new System.Drawing.Point(4, 44);
+            this.Monthly.Name = "Monthly";
+            this.Monthly.Padding = new System.Windows.Forms.Padding(3);
+            this.Monthly.Size = new System.Drawing.Size(550, 416);
+            this.Monthly.TabIndex = 2;
+            this.Monthly.Text = "Monthly";
+            this.Monthly.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -294,72 +136,242 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Sales Report";
             // 
-            // panel4
+            // guna2GradientPanel1
             // 
-            this.panel4.BackColor = System.Drawing.Color.MistyRose;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(206, 459);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(585, 140);
-            this.panel4.TabIndex = 5;
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsStocks);
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsLogout);
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsSettings);
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsUsers);
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsReports);
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsSales);
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsInventory);
+            this.guna2GradientPanel1.Controls.Add(this.btnSlsOrder);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.White;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.LightPink;
+            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 45);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(200, 566);
+            this.guna2GradientPanel1.TabIndex = 12;
             // 
-            // label3
+            // btnSlsStocks
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label3.Location = new System.Drawing.Point(15, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Total Sales: ";
+            this.btnSlsStocks.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsStocks.FlatAppearance.BorderSize = 0;
+            this.btnSlsStocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsStocks.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsStocks.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsStocks.Location = new System.Drawing.Point(2, 223);
+            this.btnSlsStocks.Name = "btnSlsStocks";
+            this.btnSlsStocks.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsStocks.TabIndex = 17;
+            this.btnSlsStocks.Text = "     Stocks";
+            this.btnSlsStocks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsStocks.UseVisualStyleBackColor = false;
             // 
-            // Sales
+            // btnSlsLogout
+            // 
+            this.btnSlsLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsLogout.FlatAppearance.BorderSize = 0;
+            this.btnSlsLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsLogout.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsLogout.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsLogout.Location = new System.Drawing.Point(1, 486);
+            this.btnSlsLogout.Name = "btnSlsLogout";
+            this.btnSlsLogout.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsLogout.TabIndex = 16;
+            this.btnSlsLogout.Text = "     Logout";
+            this.btnSlsLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsLogout.UseVisualStyleBackColor = false;
+            // 
+            // btnSlsSettings
+            // 
+            this.btnSlsSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsSettings.FlatAppearance.BorderSize = 0;
+            this.btnSlsSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsSettings.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsSettings.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsSettings.Location = new System.Drawing.Point(1, 442);
+            this.btnSlsSettings.Name = "btnSlsSettings";
+            this.btnSlsSettings.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsSettings.TabIndex = 15;
+            this.btnSlsSettings.Text = "     Settings";
+            this.btnSlsSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsSettings.UseVisualStyleBackColor = false;
+            // 
+            // btnSlsUsers
+            // 
+            this.btnSlsUsers.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsUsers.FlatAppearance.BorderSize = 0;
+            this.btnSlsUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsUsers.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsUsers.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsUsers.Location = new System.Drawing.Point(1, 398);
+            this.btnSlsUsers.Name = "btnSlsUsers";
+            this.btnSlsUsers.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsUsers.TabIndex = 14;
+            this.btnSlsUsers.Text = "     Users";
+            this.btnSlsUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsUsers.UseVisualStyleBackColor = false;
+            // 
+            // btnSlsReports
+            // 
+            this.btnSlsReports.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsReports.FlatAppearance.BorderSize = 0;
+            this.btnSlsReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsReports.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsReports.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsReports.Location = new System.Drawing.Point(2, 179);
+            this.btnSlsReports.Name = "btnSlsReports";
+            this.btnSlsReports.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsReports.TabIndex = 13;
+            this.btnSlsReports.Text = "     Reports";
+            this.btnSlsReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsReports.UseVisualStyleBackColor = false;
+            // 
+            // btnSlsSales
+            // 
+            this.btnSlsSales.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsSales.FlatAppearance.BorderSize = 0;
+            this.btnSlsSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsSales.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsSales.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsSales.Location = new System.Drawing.Point(1, 135);
+            this.btnSlsSales.Name = "btnSlsSales";
+            this.btnSlsSales.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsSales.TabIndex = 12;
+            this.btnSlsSales.Text = "     Sales";
+            this.btnSlsSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsSales.UseVisualStyleBackColor = false;
+            // 
+            // btnSlsInventory
+            // 
+            this.btnSlsInventory.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsInventory.FlatAppearance.BorderSize = 0;
+            this.btnSlsInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsInventory.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsInventory.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsInventory.Location = new System.Drawing.Point(1, 91);
+            this.btnSlsInventory.Name = "btnSlsInventory";
+            this.btnSlsInventory.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsInventory.TabIndex = 11;
+            this.btnSlsInventory.Text = "     Inventory";
+            this.btnSlsInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsInventory.UseVisualStyleBackColor = false;
+            // 
+            // btnSlsOrder
+            // 
+            this.btnSlsOrder.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlsOrder.FlatAppearance.BorderSize = 0;
+            this.btnSlsOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSlsOrder.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSlsOrder.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnSlsOrder.Location = new System.Drawing.Point(1, 47);
+            this.btnSlsOrder.Name = "btnSlsOrder";
+            this.btnSlsOrder.Size = new System.Drawing.Size(197, 33);
+            this.btnSlsOrder.TabIndex = 10;
+            this.btnSlsOrder.Text = "     Orders";
+            this.btnSlsOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSlsOrder.UseVisualStyleBackColor = false;
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Controls.Add(this.label2);
+            this.guna2GradientPanel2.Controls.Add(this.pictureBox3);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.LightPink;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1064, 45);
+            this.guna2GradientPanel2.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Location = new System.Drawing.Point(58, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Dashboard";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Tomato;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(323, 31);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(217, 24);
+            this.guna2DateTimePicker1.TabIndex = 19;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2026, 5, 10, 20, 46, 46, 478);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = global::InventorySystem.Properties.Resources.icons8_menu_50;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(34, 23);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // frmSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::InventorySystem.Properties.Resources.hfjwhasfj1;
-            this.ClientSize = new System.Drawing.Size(808, 611);
-            this.Controls.Add(this.panel4);
+            this.BackColor = System.Drawing.Color.Sienna;
+            this.ClientSize = new System.Drawing.Size(1064, 611);
+            this.Controls.Add(this.guna2GradientPanel1);
+            this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Sales";
+            this.Name = "frmSales";
             this.Text = "Sales";
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.guna2TabControl1.ResumeLayout(false);
+            this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel2.ResumeLayout(false);
+            this.guna2GradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnOrdersSales;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnMonthly;
-        private System.Windows.Forms.Button btnWeekly;
-        private System.Windows.Forms.Button btnDaily;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private System.Windows.Forms.Button btnSlsStocks;
+        private System.Windows.Forms.Button btnSlsLogout;
+        private System.Windows.Forms.Button btnSlsSettings;
+        private System.Windows.Forms.Button btnSlsUsers;
+        private System.Windows.Forms.Button btnSlsReports;
+        private System.Windows.Forms.Button btnSlsSales;
+        private System.Windows.Forms.Button btnSlsInventory;
+        private System.Windows.Forms.Button btnSlsOrder;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
+        private System.Windows.Forms.TabPage tabDaily;
+        private System.Windows.Forms.TabPage tabWeekly;
+        private System.Windows.Forms.TabPage Monthly;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }

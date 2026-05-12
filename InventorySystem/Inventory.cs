@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace InventorySystem
 {
-    public partial class Inventory : Form
+    public partial class frmInv : Form
     {
-        public Inventory()
+        public frmInv()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

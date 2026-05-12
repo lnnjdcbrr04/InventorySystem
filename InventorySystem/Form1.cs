@@ -10,21 +10,26 @@ using System.Windows.Forms;
 
 namespace InventorySystem
 {
-    public partial class Form1 : Form
+    public partial class frmLogin : Form
     {
-        public Form1()
+        public frmLogin()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
+            if (txtUsername.Text == "admin" && txtPassword.Text == "1234")
+            {
+                frmDashboard dash = new frmDashboard();
+                dash.Show();
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username or Password");
+            }
         }
     }
 }

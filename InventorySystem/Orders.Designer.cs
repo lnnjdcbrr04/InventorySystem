@@ -1,6 +1,6 @@
 ﻿namespace InventorySystem
 {
-    partial class Orders
+    partial class frmOrders
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtConNo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
@@ -42,7 +40,6 @@
             this.btnAddOrder = new System.Windows.Forms.Button();
             this.cmbStat = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dtpPickup = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.cmbProduct = new System.Windows.Forms.ComboBox();
@@ -53,61 +50,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnOrdersSales = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btnOrdStocks = new System.Windows.Forms.Button();
+            this.btnOrdLogout = new System.Windows.Forms.Button();
+            this.btnOrdSettings = new System.Windows.Forms.Button();
+            this.btnOrdUsers = new System.Windows.Forms.Button();
+            this.btnOrdReports = new System.Windows.Forms.Button();
+            this.btnOrdSales = new System.Windows.Forms.Button();
+            this.btnOrdInventory = new System.Windows.Forms.Button();
+            this.btnOrdOrders = new System.Windows.Forms.Button();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.guna2GradientPanel1.SuspendLayout();
+            this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1084, 45);
-            this.panel1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(58, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Dashboard";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::InventorySystem.Properties.Resources.icons8_menu_50;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 23);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
+            this.panel3.Controls.Add(this.guna2DateTimePicker1);
             this.panel3.Controls.Add(this.txtConNo);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.cmbCategory);
@@ -118,7 +83,6 @@
             this.panel3.Controls.Add(this.btnAddOrder);
             this.panel3.Controls.Add(this.cmbStat);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.dtpPickup);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.txtQuantity);
             this.panel3.Controls.Add(this.cmbProduct);
@@ -132,6 +96,22 @@
             this.panel3.Size = new System.Drawing.Size(375, 548);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Tomato;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.SystemColors.ControlLightLight;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(146, 331);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(188, 22);
+            this.guna2DateTimePicker1.TabIndex = 26;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2026, 5, 10, 20, 46, 46, 478);
             // 
             // txtConNo
             // 
@@ -238,15 +218,6 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Status:";
             // 
-            // dtpPickup
-            // 
-            this.dtpPickup.CalendarFont = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpPickup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpPickup.Location = new System.Drawing.Point(133, 332);
-            this.dtpPickup.Name = "dtpPickup";
-            this.dtpPickup.Size = new System.Drawing.Size(223, 21);
-            this.dtpPickup.TabIndex = 15;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -349,164 +320,210 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "Orders";
             // 
-            // panel2
+            // guna2GradientPanel1
             // 
-            this.panel2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel2.Controls.Add(this.button11);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.btnOrdersSales);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 45);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 566);
-            this.panel2.TabIndex = 6;
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdStocks);
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdLogout);
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdSettings);
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdUsers);
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdReports);
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdSales);
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdInventory);
+            this.guna2GradientPanel1.Controls.Add(this.btnOrdOrders);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.White;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.LightPink;
+            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 45);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(200, 566);
+            this.guna2GradientPanel1.TabIndex = 12;
             // 
-            // button11
+            // btnOrdStocks
             // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button11.Location = new System.Drawing.Point(2, 227);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(197, 33);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "     Stocks";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnOrdStocks.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdStocks.FlatAppearance.BorderSize = 0;
+            this.btnOrdStocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdStocks.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdStocks.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdStocks.Location = new System.Drawing.Point(2, 223);
+            this.btnOrdStocks.Name = "btnOrdStocks";
+            this.btnOrdStocks.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdStocks.TabIndex = 17;
+            this.btnOrdStocks.Text = "     Stocks";
+            this.btnOrdStocks.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdStocks.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnOrdLogout
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button7.Location = new System.Drawing.Point(1, 490);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 33);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "     Logout";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnOrdLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdLogout.FlatAppearance.BorderSize = 0;
+            this.btnOrdLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdLogout.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdLogout.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdLogout.Location = new System.Drawing.Point(1, 486);
+            this.btnOrdLogout.Name = "btnOrdLogout";
+            this.btnOrdLogout.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdLogout.TabIndex = 16;
+            this.btnOrdLogout.Text = "     Logout";
+            this.btnOrdLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdLogout.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnOrdSettings
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button6.Location = new System.Drawing.Point(1, 446);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(197, 33);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "     Settings";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnOrdSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdSettings.FlatAppearance.BorderSize = 0;
+            this.btnOrdSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdSettings.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdSettings.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdSettings.Location = new System.Drawing.Point(1, 442);
+            this.btnOrdSettings.Name = "btnOrdSettings";
+            this.btnOrdSettings.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdSettings.TabIndex = 15;
+            this.btnOrdSettings.Text = "     Settings";
+            this.btnOrdSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdSettings.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnOrdUsers
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button5.Location = new System.Drawing.Point(1, 402);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(197, 33);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "     Users";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnOrdUsers.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdUsers.FlatAppearance.BorderSize = 0;
+            this.btnOrdUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdUsers.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdUsers.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdUsers.Location = new System.Drawing.Point(1, 398);
+            this.btnOrdUsers.Name = "btnOrdUsers";
+            this.btnOrdUsers.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdUsers.TabIndex = 14;
+            this.btnOrdUsers.Text = "     Users";
+            this.btnOrdUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdUsers.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnOrdReports
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button4.Location = new System.Drawing.Point(2, 183);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 33);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "     Reports";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnOrdReports.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdReports.FlatAppearance.BorderSize = 0;
+            this.btnOrdReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdReports.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdReports.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdReports.Location = new System.Drawing.Point(2, 179);
+            this.btnOrdReports.Name = "btnOrdReports";
+            this.btnOrdReports.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdReports.TabIndex = 13;
+            this.btnOrdReports.Text = "     Reports";
+            this.btnOrdReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdReports.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnOrdSales
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button3.Location = new System.Drawing.Point(1, 139);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 33);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "     Sales";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnOrdSales.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdSales.FlatAppearance.BorderSize = 0;
+            this.btnOrdSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdSales.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdSales.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdSales.Location = new System.Drawing.Point(1, 135);
+            this.btnOrdSales.Name = "btnOrdSales";
+            this.btnOrdSales.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdSales.TabIndex = 12;
+            this.btnOrdSales.Text = "     Sales";
+            this.btnOrdSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdSales.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnOrdInventory
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.button2.Location = new System.Drawing.Point(1, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 33);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "     Inventory";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnOrdInventory.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdInventory.FlatAppearance.BorderSize = 0;
+            this.btnOrdInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdInventory.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdInventory.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdInventory.Location = new System.Drawing.Point(1, 91);
+            this.btnOrdInventory.Name = "btnOrdInventory";
+            this.btnOrdInventory.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdInventory.TabIndex = 11;
+            this.btnOrdInventory.Text = "     Inventory";
+            this.btnOrdInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdInventory.UseVisualStyleBackColor = false;
             // 
-            // btnOrdersSales
+            // btnOrdOrders
             // 
-            this.btnOrdersSales.FlatAppearance.BorderSize = 0;
-            this.btnOrdersSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrdersSales.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdersSales.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnOrdersSales.Location = new System.Drawing.Point(1, 51);
-            this.btnOrdersSales.Name = "btnOrdersSales";
-            this.btnOrdersSales.Size = new System.Drawing.Size(197, 33);
-            this.btnOrdersSales.TabIndex = 2;
-            this.btnOrdersSales.Text = "     Orders";
-            this.btnOrdersSales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdersSales.UseVisualStyleBackColor = true;
+            this.btnOrdOrders.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrdOrders.FlatAppearance.BorderSize = 0;
+            this.btnOrdOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdOrders.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdOrders.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnOrdOrders.Location = new System.Drawing.Point(1, 47);
+            this.btnOrdOrders.Name = "btnOrdOrders";
+            this.btnOrdOrders.Size = new System.Drawing.Size(197, 33);
+            this.btnOrdOrders.TabIndex = 10;
+            this.btnOrdOrders.Text = "     Orders";
+            this.btnOrdOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrdOrders.UseVisualStyleBackColor = false;
             // 
-            // Orders
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Controls.Add(this.label2);
+            this.guna2GradientPanel2.Controls.Add(this.pictureBox3);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.LightPink;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1084, 45);
+            this.guna2GradientPanel2.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Location = new System.Drawing.Point(58, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Dashboard";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = global::InventorySystem.Properties.Resources.icons8_menu_50;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(34, 23);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // frmOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::InventorySystem.Properties.Resources.hfjwhasfj1;
+            this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(1084, 611);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.guna2GradientPanel1);
+            this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Orders";
+            this.Name = "frmOrders";
             this.Text = "Orders";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel2.ResumeLayout(false);
+            this.guna2GradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -516,7 +533,6 @@
         private System.Windows.Forms.ComboBox cmbProduct;
         private System.Windows.Forms.ComboBox cmbStat;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dtpPickup;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.Button btnDeleteSo;
@@ -529,14 +545,18 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtConNo;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnOrdersSales;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private System.Windows.Forms.Button btnOrdStocks;
+        private System.Windows.Forms.Button btnOrdLogout;
+        private System.Windows.Forms.Button btnOrdSettings;
+        private System.Windows.Forms.Button btnOrdUsers;
+        private System.Windows.Forms.Button btnOrdReports;
+        private System.Windows.Forms.Button btnOrdSales;
+        private System.Windows.Forms.Button btnOrdInventory;
+        private System.Windows.Forms.Button btnOrdOrders;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }
